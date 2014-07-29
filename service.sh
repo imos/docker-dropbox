@@ -38,7 +38,7 @@ Start() {
     echo 'docker is already running.' >&2
   fi
   Mount
-  DOCKER_FLAGS=(--name="${SERVICE}" --hostname="${SERVICE}" --detach)
+  DOCKER_FLAGS=(--name="${SERVICE}" --hostname="${SERVICE}" --detach --restart)
   DockerRun "$@"
 }
 
