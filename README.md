@@ -10,7 +10,7 @@ Run the following command.  This command will show a URL to activate Dropbox.  O
 
 ```sh
 git clone https://github.com/imos/docker-dropbox docker-dropbox
-cd docker-dropbox && ./service.sh install
+cd docker-dropbox && make install
 ```
 
 How to Use Docker-Dropbox
@@ -19,5 +19,5 @@ How to Use Docker-Dropbox
 Run the following command:
 
 ```sh
-./service.sh start
+make start
 ```
